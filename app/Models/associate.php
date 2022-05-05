@@ -10,7 +10,7 @@ class associate extends Model
     use HasFactory;
 
     public function sons(){
-        return $this->hasMany(son::class, 'foreign_key', 'local_key');
+        return $this->hasMany(son::class);
 
     }
 }
